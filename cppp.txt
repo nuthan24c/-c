@@ -1,0 +1,247 @@
+class Example {
+   
+    int a, b;
+public:
+
+    Example() {
+
+        a = 10;
+        b = 20;
+        cout << "Im Constructor\n";
+    }
+
+    void Display() {
+        cout << "Values :" << a << "\t" << b;
+    }
+};
+
+int main() {
+    Example Object;
+   
+    Object.Display();
+
+   
+    getch();
+    return 0;
+}
+
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+class Apple
+
+{
+    
+public:
+  
+  Apple()
+ 
+   {
+     
+   cout<<"constructor called"<<endl;
+  
+  }
+
+};
+
+int main()
+
+{
+  
+  Apple O;
+   
+ 
+    return 0;
+
+}
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+class Employee
+
+{
+
+public:
+
+int id;
+
+string name;
+
+float salary;
+
+void insert(int i, string n, float s)
+{
+  
+  id = i;
+   
+ name = n;
+  
+  salary = s;
+
+}
+
+void display()
+
+{
+  
+  cout<<id<<" "<<name<<" "<<salary<<endl;
+
+}
+
+};
+
+int main(void)
+
+{
+    
+Employee e1;
+ 
+   Employee e2;
+   
+ e1.insert(101,"nuthan",100000);
+  
+  e2.insert(102,"nithya",100000);
+   
+ e1.display();
+ 
+   e2.display();
+  
+  return 0;
+  
+  
+}
+
+
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+class Employee
+
+{
+  
+  public:
+
+  
+Employee(int a)
+
+  {
+  
+  cout<<"paramatrized constructor"<<endl;
+  
+
+  }
+
+  Employee()
+ 
+ {
+    
+  cout<<"NoN-paramaterized constructor"<<endl;
+  
+}
+ 
+ void fun1()
+ 
+ {
+  
+    cout<<"This is Function 1"<<endl;
+ 
+ }
+ 
+ void fun2()
+ 
+
+ {
+    
+  cout<<"This is Function 2"<<endl;
+ 
+ }
+
+};
+
+int main(void)
+
+{
+ 
+  Employee Obj = new Employee();
+ 
+   Employee obj2(1);
+   
+// Obj.fun1();
+   
+ //Obj.fun2();
+ 
+   return 0;
+
+}
+    
+
+
+
+#include <iostream>
+
+
+using namespace std;
+
+
+class Employee
+
+{
+ 
+   private:
+   
+ void display()
+  
+  {
+    
+    cout<<"This is main function"<<endl;
+  
+  }
+
+};
+
+class Employee2: public Employee
+
+{
+ 
+ public:
+ 
+ void display()
+ 
+ {
+   
+   cout<<"This is derived function"<<endl;
+
+  }
+
+};
+
+int main()
+
+{
+  
+  Employee2 O;
+   
+ O.display();
+  
+  return 0;
+
+}
+    

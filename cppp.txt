@@ -244,4 +244,36 @@ int main()
   return 0;
 
 }
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ int a;
+ cout<<"Enter the value of a:"<<endl;
+ cin>>a;
+ try
+ {
+     if(a<=500)
+     {
+     throw 'e';
+     }
+     else
+     {
+         throw 2;
+     }
+ }
+ catch(char e)
+ {
+     cout<<"500 error"<<endl;
+ }
+ catch(int x)
+ {
+     cout<<"Global Exception"<<endl;
+ }
+ 
+}
     
